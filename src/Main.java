@@ -35,5 +35,27 @@ public class Main {
             }
             System.out.print(boxChar[i] + ", ");
         }
+        System.out.println("Задание 3");
+        for (int i = boxInt.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(boxInt[i]);
+                break;
+            }
+            System.out.print(boxInt[i] + ", ");
+        }
+        for (int i = boxDouble.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(boxDouble[i]);
+                break;
+            }
+            System.out.print(boxDouble[i] + ", ");
+        }
+        for (int i = boxChar.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(boxChar[i]);
+                break;
+            }
+            System.out.print(boxChar[i] + ", ");
+        }
     }
 }

@@ -1,5 +1,71 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
+        //System.out.println("Задание 1");
+
+        int[] boxInt = new int[3];
+        boxInt[0] = 1;
+        boxInt[1] = 2;
+        boxInt[2] = 3;
+
+        double[] boxDouble = {1.57, 7.654, 9.986};
+
+        char[] boxChar = {'h', 'e', 'l', 'l', 'o'};
+
+        System.out.println("Задание 2");
+
+        for (int i = 0; i < boxInt.length; i++) {
+            if (i == boxInt.length - 1) {
+                System.out.println(boxInt[i]);
+                break;
+            }
+            System.out.print(boxInt[i] + ", ");
+        }
+        for (int i = 0; i < boxDouble.length; i++) {
+            if (i == boxDouble.length - 1) {
+                System.out.println(boxDouble[i]);
+                break;
+            }
+            System.out.print(boxDouble[i] + ", ");
+        }
+        for (int i = 0; i < boxChar.length; i++) {
+            if (i == boxChar.length - 1) {
+                System.out.println(boxChar[i]);
+                break;
+            }
+            System.out.print(boxChar[i] + ", ");
+        }
+        System.out.println("Задание 3");
+        for (int i = boxInt.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(boxInt[i]);
+                break;
+            }
+            System.out.print(boxInt[i] + ", ");
+        }
+        for (int i = boxDouble.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(boxDouble[i]);
+                break;
+            }
+            System.out.print(boxDouble[i] + ", ");
+        }
+        for (int i = boxChar.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.println(boxChar[i]);
+                break;
+            }
+            System.out.print(boxChar[i] + ", ");
+        }
+        System.out.println("Задание 4");
+
+        for (int i = 0; i < boxInt.length; i++) {
+            if (boxInt[i] % 2 != 0) {
+                boxInt[i] = boxInt[i] + 1;
+            }
+        }
+        System.out.println(Arrays.toString(boxInt));
     }
 }
